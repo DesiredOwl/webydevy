@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/91d1ad08da.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>e-Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<div id="header">
+    <div class="containe">
+        <nav>
+            <img src="img/Logo.png" class="logo">
+            <ul class="toggle" id="sidemenu">
+                    <li style="--i:0"><a href="#header">Home</a></li>
+                    <li style="--i:1"><a href="#about">About</a></li>
+                    <li style="--i:2"><a href="#Education">Education</a></li>
+                    <li style="--i:3"><a href="#Hobby">Hobby</a></li>
+                    <li style="--i:4"><a href="#contact">Socials</a></li>
+                <i class="fas fa-solid fa-bars-staggered" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Bachelor of Science in Computer Engineering</p>
+            <h1>Hi, I'm Rhein Alrhey<br><Span>Zamora</Span></h1>
+        </div>
+    </div>
+</div> 
+<!--About-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="box about-col-1">
+                <img src="img/PicMe.png">
+            </div>
+            <div class="box about-col-2">
+                <h1 class ="sub-title">About Me</h1>
+                <p>Hi! Let me talk about myself for a second, My name is Rhein Alrhey B. Zamora, </p>
+                <p>I currently live in Nancamaliran East Urdaneta City, Pangasinan.</p>
+                <p>I like to travel, roadtrips specifically.</p>
+                <p><span>Motto: "Behind every cloud, There's a Plane"</span><i class="fa-solid fa-plane fa-spin"></i></p>
+               
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('family')">Family</p>
+                    <p class="tab-links" onclick="opentab('talent')">Talent</p>
+                    <p class="tab-links" onclick="opentab('education')">More about me</p>  
+                </div>
+            
+                <div class="tab-contents active-tab" id="family">
+                <ul>
+                    <li><span >Father</span><br>Ronald V. Zamora</li>
+                    <li><span >Mother</span><br>Olive B. Zamora</li>
+                    <li><span >Older Brother (Me)</span><br>Rhein Alrhey B. Zamora</li>
+                    <li><span >Brother</span><br>Rayver Andrei B. Zamora</li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="talent">
+                <ul>
+                    <li><span >Drumming</span><br>I got interested in drumming since I was a kid.<br> 
+                    Small story short, I joined the Drum and Lyre corps. when I was in Elementary and after<br> 
+                    that I've always wanted to play in a band. I've never been in a band, so if you know<br> 
+                    someone that needs a drummer, you know who to call :)<br> 
+                    I'm a great drummer, if I say so myself.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span >ETC</span><br>I've always liked dragon fruit and mangoes. I also like salty foods, burgers, and fruit shakes.<br> 
+                        I try to maintain my physical and mental health at a healthy level, I always try to help someone<br>
+                        who is in need whenever possible. My strengths are, I am self-motivated, hard-working, and a very<br>
+                        disciplined person. I'm that kind of person when given a specific task he will do it with the<br>
+                        utmost of his ability. My goal is to graduate from college and get a job in a reputed company<br>
+                        and get a position where I can build my career and earn money so that I can pay off my debt<br>
+                        to my parents and also so that I can buy the things that I've always wanted.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Education">
+    <h1 class="box sub-titleE">My Education</h1>
+    <div class="box Education-list">
+        <div>
+            <i class="fa-solid fa-suitcase"></i>
+            <h2>Pre-School</h2>
+            <p>I graduated pre-school at Merryland Montessori and Highschool, Inc., which is a private school.</p>
+            <a href="https://www.facebook.com/Merrylandmhsi/">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-school-flag"></i>
+            <h2>Elementary</h2>
+            <p>I continued at Urdaneta I Central School and there is where I studied during my elementary days.</p>
+            <a href="https://www.facebook.com/UrdanetaICentralSchool/">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-school"></i>
+            <h2>Highschool</h2>
+            <p>2015 is the year when I graduated from elementary, and the school that I went to is Urdaneta National Highschool.</p>
+            <a href="https://www.facebook.com/urdanetacitynhsofficial/">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>College</h2>
+            <p>I'm still studying to get my degree in computer engineering at Pangasinan State University.</p>
+            <a href="https://urdaneta.psu.edu.ph/">Learn More</a>
+        </div>
+    </div>
+</div>
+<div id="Hobby">
+    <div class="container">
+        <h1 class="box sub-titleH">My Hobby</h1>
+        <div class="box hobby-list">
+            <div class="hobby">
+                <img src="img/Music.png">
+                <div class="layer">
+                    <h3>Music</h3>
+                    <p>Ever since I was a kid, I've always been interested in drums.<br>
+                        The church that we used to go to has one, and they would perform worship songs live on stage.<br>
+                    </p>
+                    <a heref="#"><i class="fa-solid fa-drum"></i></a>
+                </div>
+            </div>
+            <div class="hobby">
+                <img src="img/TV.png">
+                <div class="layer">
+                    <h3>Watching TV</h3>
+                    <p>Watching TV series is one of the hobbies that I enjoy, I would watch documentaries and dramas.
+                       At one point I was watching this documentary about dangerous roads in the world, I was enjoying
+                       it too much that I did not notice the time. It was already 2:00 am Haha!
+                    </p>
+                    <a heref="#"><i class="fa-solid fa-tv"></i></a>
+                </div>
+            </div>
+            <div class="hobby">
+                <img src="img/Gaming.png">
+                <div class="layer">
+                    <h3>Gaming</h3>
+                    <p>I would play online multiplayer games with my homies all day, all night long back in the day,
+                        but now we rarely play together, probably because we're already in college and things do get busy
+                        sometimes. But this is one of my favorite hobbies, I've been playing games since elementary.
+                    </p>
+                    <a heref="#"><i class="fa-solid fa-headset"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Go back at the Top</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Socials</h1>
+            <p><i class="fa-solid fa-envelope"></i>rzamora_21ur0354@psu.edu.ph</p>
+            <p><i class="fa-solid fa-phone"></i>09455296631</p>
+            <div class="social-ico">
+                <a href="https://www.facebook.com/einhunderttausendzwanzig/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/rh.zamora/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com/DesiredOwl"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+        </div>
+        <div class="end">
+        <p>Created by Rhein Alrhey Zamora COE-3B. Submitted to Engr. Jay-ar M. Pentecostes</p>
+    </div>
+</div>
+<script src="java.js"></script>
+</body>
+</html>
